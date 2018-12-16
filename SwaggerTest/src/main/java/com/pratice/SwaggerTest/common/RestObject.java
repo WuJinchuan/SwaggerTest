@@ -1,7 +1,5 @@
 package com.pratice.SwaggerTest.common;
 
-import org.springframework.http.HttpStatus;
-
 public class RestObject {
     private int statusCode;
     private String Message;

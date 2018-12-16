@@ -1,8 +1,14 @@
 package com.pratice.SwaggerTest.PO;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "UserPo", description = "User信息")
 public class UserPO {
+    @ApiModelProperty(value="String", notes = "user id", required = true)
     private String id;
+    @ApiModelProperty(value="String", notes = "user name", required = false)
     private String userName;
     private String password;
     private String email;
